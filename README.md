@@ -1,1 +1,1 @@
-Simple Sinatra app with a database
+simple Sinatra app with a database
