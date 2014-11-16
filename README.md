@@ -1,1 +1,1 @@
-simple Sinatra app with views and a database
+simple Sinatra app with a Mongo database
