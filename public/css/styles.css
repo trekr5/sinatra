@@ -1,18 +1,7 @@
-#wrapper{
-    width:66%;
-    margin:auto;
-}
- 
-#header{
-    background-color:#ade;
-}
- 
-#header>h1{
-    font-size:200%;
-}
+
  
 h2{
-    font-size:130%;
+    
     font-family:sans-serif;
 }
  
@@ -22,16 +11,10 @@ h2{
     font-family:sans-serif;
 }
  
-#side_bar{
-    margin:12px 0;
-    width :30%;
-    float:right;
-    clear:none;
-    background-color:#ddd;
-}
+
  
 h1{
-    font-size:150%;
+    
     font-family:sans-serif;
 }
  
@@ -44,11 +27,7 @@ h1{
     border-top:solid 1px #69a;
 }
  
-ol{
-    padding-top:20px;
-    background-color:#ade;
-    display:block;
-}
+
  
 li{
     color:white;

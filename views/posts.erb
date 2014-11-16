@@ -1,0 +1,33 @@
+    
+<!DOCTYPEhtml>
+<html>
+<% require './post' %>
+ <body>
+    <head>
+        
+     <title> My Sinatra App </title>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+     <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+     <link href=href="css/styles.css" rel="stylesheet" type="text/css">
+
+ </head>
+<h1>Posts</h1>
+
+<h3> Content </h3>
+      
+      <% Post.all.entries.each do |post| %> 
+ 
+    
+      <h4> <%= p post.title %> </h4>
+      <h4> <%= p post.body %> </h4>
+    </br>
+  </br>
+    
+
+    <% end %>
+  
+  
+<a href="/"> Home </a>
+</html>
