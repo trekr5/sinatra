@@ -1,7 +1,7 @@
 		
 <!DOCTYPEhtml>
 <html>
-<% require './post' %>
+
 <body>
 <head>
 
@@ -23,7 +23,7 @@
 </tr>
 
 
-<% Post.all.entries.each do |post| %> 
+<% @posts.each do |post| %> 
 	<tr>
 		<td>
 		<%= post.title %> </td>

@@ -2,6 +2,7 @@ require "rubygems"
 require "sinatra"
 require "mongoid"
 #require "haml"
+require './post'
 
 
 configure do
@@ -16,9 +17,10 @@ get "/" do
 end 
 
 get "/posts" do
-    
-     erb :posts
-  end
+  
+  @posts = Post.all.entries
+  erb :posts
+end
 
 
 
