@@ -1,42 +1,42 @@
-    
+		
 <!DOCTYPEhtml>
 <html>
 <% require './post' %>
- <body>
-    <head>
-        
-     <title> My Sinatra App </title>    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-     <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
-     <link href=href="css/styles.css" rel="stylesheet" type="text/css">
+<body>
+<head>
 
- </head>
+<title> My Sinatra App </title>    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css">
+<link href=href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
 <h1>Posts</h1>
- </br></br>
+</br></br>
 
-  <table class="table table-striped">
-  <tr>
-    <th>Title</th>
-    <th>Body</th>
-   </tr>
-   
-      
-      <% Post.all.entries.each do |post| %> 
-   <tr>
-    <td>
-      <%= post.title %> </td>
-      <td><%= post.body %> </td>
-   
-    
-  </tr>
-    <% end %>
-  
+<table class="table table-striped">
+<tr>
+<th>Title</th>
+<th>Body</th>
+</tr>
 
-  </table>
-  
-  
+
+<% Post.all.entries.each do |post| %> 
+	<tr>
+		<td>
+		<%= post.title %> </td>
+		<td><%= post.body %> </td>
+
+		
+	</tr>
+		<% end %>
+	
+
+</table>
+
+
 <a href="/"> Home </a>
 </body>
 </html>
