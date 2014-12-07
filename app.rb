@@ -16,22 +16,29 @@ get "/" do
 
 end 
 
+post "/encrypt" do
+"You said hello"
+@username = params[:username]
+@password = params[:password]
+  
+ # erb :encrypt	
+
+end	
+
+get "/encrypt" do
+  erb :encrypt
+
+end	
+
 get "/posts" do
   
   @posts = Post.all.entries
   erb :posts
 end
 
-
-
-
-
-
-
-
-
-
-
-
-
 end
+
+__END__
+
+
+
