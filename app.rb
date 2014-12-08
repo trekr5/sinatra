@@ -16,10 +16,12 @@ get "/" do
 
 end 
 
-post "/encrypt" do
-"You said hello"
-@username = params[:username]
-@password = params[:password]
+post "/" do
+
+username = params[:username] 
+password = params[:password] 
+
+p "Hello #{username} and this is your password #{password}"
   
  # erb :encrypt	
 
